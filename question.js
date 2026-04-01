@@ -133,7 +133,7 @@ const questions = [
     },
   
     {
-      category: "generalKnowledge",
+      category: "general Knowledge",
       questions: [
         {
           question: "Which is the longest river in the world?",

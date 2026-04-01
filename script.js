@@ -6,12 +6,10 @@ const resultContainer = document.querySelector(".result-container");
 const timeDisplay = document.querySelector(".time-duration");
 
 let currentQuestion = null;
-//let quizCategory = 'generalKnowledge';
 const QUIZ_TIME_LIMIT = 15;
 let currentTime = QUIZ_TIME_LIMIT;
 let timer = null;
 const questionIndexHistory = [];
-//let numberOfQuestions = 5;
 let correctAnswerCount = 0;
 
 // display the quiz result and hide the quiz container
