@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--google font-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
+    <!--quiz configuration container-->
+    <div class="config-container">
+      <h2 class="config-title">Quiz</h2>
+      <div class="config-options">
+        <h4 class="options-title">Select Category</h4>
+        <div class="category-options">
+          <button class="category-option">Programming</button>
+          <button class="category-option">GeneralKnowledge</button>
+          <button class="category-option">Mathematics</button>
+          <button class="category-option">Entertainment</button>
+        </div>
+      </div>
+      <div class="config-options">
+        <h4 class="options-title">No. of questions</h4>
+        <div class="question-options">
+          <button class="question-option">5</button>
+          <button class="question-option">10</button>
+          <button class="question-option">15</button>
+          <button class="question-option">20</button>
+        </div>
+      </div>
+
+      <button class="start-quiz-button">Start Quiz</button>
+    </div>
+    <!--quiz container for timer and next question button-->
+    <div class="quiz-container">
+      <header class="quiz-header">
+        <h2 class="quiz-title">Quiz Application</h2>
+        <div class="quiz-timer">
+          <span class="material-symbols-outlined"> timer </span>
+          <p class="time-duration">15s</p>
+        </div>
+      </header>
+
+      <div class="quiz-content">
+        <h1 class="question-text">
+          Which desert is the largest hot desert in the world?
+        </h1>
+        <ul class="answer-options">
+          <li class="answer-option">
+            Sahara <span class="material-symbols-outlined">check_circle</span>
+          </li>
+          <li class="answer-option">Antartica</li>
+          <li class="answer-option">
+            Gobi <span class="material-symbols-outlined">cancel</span>
+          </li>
+          <li class="answer-option">Kalahari</li>
+        </ul>
+      </div>
+      <div class="quiz-footer">
+        <p class="question-status"><b>1</b> of <b> 5 </b> questions</p>
+        <button class="next-question-btn">
+          Next
+          <span class="material-symbols-outlined"> arrow_right_alt </span>
+        </button>
+      </div>
+    </div>
+    <!--quiz result-->
+    <div class="result-container">
+      <img
+        src="https://www.shutterstock.com/image-vector/party-popper-emoji-icon-confetti-600nw-1934009609.jpg"
+        class="result-img"
+      />
+      <h2 class="result-title">Quiz Completed</h2>
+      <p class="result-message"></p>
+      <button class="try-again-btn">Try Again</button>
+    </div>
+    <script src="javascript/question.js"></script>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
